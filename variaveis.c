@@ -32,7 +32,7 @@ int main(){
 	
 	printf("Dados Informados:\n");
 	printf("Idade: %d.\n", idade);
-	printf("Altura: %f.\n", altura);
+	printf("Altura: %.2f.\n", altura);
 	printf("Nome: %s.\n", nome);
 	
 }
