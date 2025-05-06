@@ -22,6 +22,15 @@
 //		|-> Resto de divisão inteira: %
 //	* Existe precedência entre os operadores!
 	
+//	* Operadores de atribuição aritmetica
+//	|-> Incremento em 1 unidade ++
+//	|-> Decremento em 1 unidade --
+//	|-> Incremento genérico: +=
+//	|-> Decremento genérico: -=
+//	|-> Atribuição com multiplicação: *=
+//	|-> Atribuição com divisão: /=
+	
+
 int main(){
 	
 //	printf("%s\n",texto);
@@ -44,21 +53,39 @@ int main(){
 //	printf("Altura: %.2f.\n", altura);
 //	printf("Nome: %s.\n", nome);
 	
-	int A, B, soma, subtr, mult, divis;
+//	int A, B, soma, subtr, mult, divis;
+//	
+//	printf("Digite o primeiro valor:\n");
+//	scanf("%d", &A);
+//	printf("Digite o segundo valor:\n");
+//	scanf("%d", &B);
+//	
+//	soma = A + B;
+//	subtr = A - B;
+//	mult = A * B;
+//	divis = A / B;
+//	
+//	printf("Resultado:\n");
+//	printf("Soma: %d.\n", soma);
+//	printf("Subtra: %d.\n", subtr);
+//	printf("Multiplic: %d.\n", mult);
+//	printf("Divisao: %d.\n", divis);
+
+	int dado = 10;
+	printf("Dado antes do incremento: %d.\n", dado);
 	
-	printf("Digite o primeiro valor:\n");
-	scanf("%d", &A);
-	printf("Digite o segundo valor:\n");
-	scanf("%d", &B);
+	dado++;
+	printf("Depois do incremento: %d.\n", dado);
 	
-	soma = A + B;
-	subtr = A - B;
-	mult = A * B;
-	divis = A / B;
+	dado--;
+	printf("Depois do decremento: %d.\n", dado);	
 	
-	printf("Resultado:\n");
-	printf("Soma: %d.\n", soma);
-	printf("Subtra: %d.\n", subtr);
-	printf("Multiplic: %d.\n", mult);
-	printf("Divisao: %d.\n", divis);
+	dado += 3;
+	printf("Depois do incremento em 3 unidades: %d.\n",dado);
+	
+	dado -= 2;
+	printf("Depois do decremento em 2 unidades: %d.\n", dado);
+	
+	dado *= 10;
+	printf("Depois de multiplicar por 10: %d.\n", dado);
 }
