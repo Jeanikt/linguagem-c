@@ -30,5 +30,9 @@ int main(){
 	printf("Digite o nome:\n");
 	scanf("%s", &nome);
 	
+	printf("Dados Informados:\n");
+	printf("Idade: %d.\n", idade);
+	printf("Altura: %f.\n", altura);
+	printf("Nome: %s.\n", nome);
 	
 }
